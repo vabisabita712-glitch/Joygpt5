@@ -9,13 +9,11 @@
   to { transform: translateY(0); }
 }
 #mobileMenu {
-  display: none;
   transition: opacity 0.3s ease-in-out;
   opacity: 0;
   pointer-events: none;
 }
 #mobileMenu.active {
-  display: flex;
   opacity: 1;
   pointer-events: auto;
 }
