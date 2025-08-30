@@ -17,7 +17,8 @@
       extend: {
         colors: {
           primary: '#10B981',
-          secondary: '#4F46E5'
+          secondary: '#4F46E5',
+          'light-bg': '#f8fafc'
         },
         borderRadius: {
           'none': '0px',
@@ -64,7 +65,7 @@
                     <span class="absolute top-0 right-0 bg-primary text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">3</span>
                 </button>
                 <button class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-opacity-90 whitespace-nowrap">Buy Now</button>
-                <button id="mobileMenuButton" class="md:hidden w-10 h-10 flex items-center justify-center text-gray-700 z-50">
+                <button id="mobileMenuButton" class="md:hidden w-10 h-10 flex items-center justify-center text-gray-700 z-70">
                     <i class="ri-menu-line text-xl"></i>
                 </button>
             </div>
@@ -110,48 +111,6 @@
             </div>
         </div>
     </div>
-</section>
-<section class="py-20 bg-white">
-<div class="container mx-auto px-6">
-<div class="flex flex-col md:flex-row items-center gap-12">
-<div class="md:w-1/2">
-<img src="https://readdy.ai/api/search-image?query=A%20professional%20product%20photography%20of%20a%20premium%20natural%20supplement%20bottle%20with%20a%20clean%2C%20minimalist%20design.%20The%20bottle%20should%20be%20made%20of%20frosted%20glass%20with%20a%20bamboo%20cap%2C%20featuring%20elegant%20typography%20and%20natural%20elements%20in%20the%20label%20design.%20The%20background%20should%20be%20pure%20white%20with%20soft%20shadows%20for%20depth.%20The%20overall%20composition%20should%20convey%20premium%20quality%20and%20natural%20purity.&width=600&height=600&seq=2&orientation=squarish" alt="Product" class="w-full rounded-lg shadow-lg">
-</div>
-<div class="md:w-1/2">
-<h2 class="text-3xl font-bold mb-6">Nature's Perfect Formula</h2>
-<div class="space-y-4 mb-8">
-<div class="flex items-start gap-3">
-<div class="w-6 h-6 flex items-center justify-center mt-1">
-<i class="ri-check-line text-primary"></i>
-</div>
-<div>
-<h3 class="font-semibold text-lg">100% Natural Ingredients</h3>
-<p class="text-gray-600">Carefully selected botanical extracts and nutrients that work in harmony with your body.</p>
-</div>
-</div>
-<div class="flex items-start gap-3">
-<div class="w-6 h-6 flex items-center justify-center mt-1">
-<i class="ri-check-line text-primary"></i>
-</div>
-<div>
-<h3 class="font-semibold text-lg">Scientifically Proven</h3>
-<p class="text-gray-600">Backed by extensive research and clinical studies for effectiveness and safety.</p>
-</div>
-</div>
-<div class="flex items-start gap-3">
-<div class="w-6 h-6 flex items-center justify-center mt-1">
-<i class="ri-check-line text-primary"></i>
-</div>
-<div>
-<h3 class="font-semibold text-lg">No Side Effects</h3>
-<p class="text-gray-600">Gentle yet effective formula that supports natural weight loss without harsh reactions.</p>
-</div>
-</div>
-</div>
-<button class="bg-primary text-white px-8 py-3 !rounded-button hover:bg-opacity-90 font-medium">Add to Cart</button>
-</div>
-</div>
-</div>
 </section>
 <section class="py-20 bg-white">
     <div class="container mx-auto px-6">
@@ -216,11 +175,11 @@
     </div>
 </section>
 <!-- ===== Why Choose Our Product Section ===== -->
-<section class="bg-gray-50 py-16 px-6">
+<section class="bg-light-bg py-16 px-6">
   <div class="max-w-7xl mx-auto text-center">
     <!-- Section Heading -->
     <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
-      কেন আমাদের প্রোডাক্ট বেছে নেবেন?
+      Why Choose NatureSlim?
     </h2>
 
     <!-- Responsive Grid -->
@@ -228,49 +187,49 @@
 
       <!-- Card 1 -->
       <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300">
-        <img src="https://via.placeholder.com/120x120.png?text=FDA"
+        <img src="https://readdy.ai/api/search-image?query=fda%20approved%20seal%2C%20green%20and%20white%2C%20minimalist%20icon&width=120&height=120&seq=icon1"
              alt="FDA Approved"
              class="mx-auto mb-4 w-24 h-24 object-contain"
              loading="lazy" decoding="async">
-        <h3 class="text-lg font-bold text-gray-900 mb-2">এফডিএ অ্যাপ্রুভ</h3>
+        <h3 class="text-lg font-bold text-gray-900 mb-2">FDA Approved</h3>
         <p class="text-gray-600 text-sm">
-          আমাদের প্রোডাক্ট সম্পূর্ণভাবে এফডিএ অনুমোদিত, তাই এটি নিরাপদ ও নির্ভরযোগ্য।
+          Our facility is FDA-approved, ensuring every bottle meets the highest safety and quality standards.
         </p>
       </div>
 
       <!-- Card 2 -->
       <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300">
-        <img src="https://via.placeholder.com/120x120.png?text=Organic"
+        <img src="https://readdy.ai/api/search-image?query=organic%20leaf%20icon%2C%20green%20and%20white%2C%20minimalist&width=120&height=120&seq=icon2"
              alt="100% Organic"
              class="mx-auto mb-4 w-24 h-24 object-contain"
              loading="lazy" decoding="async">
-        <h3 class="text-lg font-bold text-gray-900 mb-2">অর্গানিক ফর্মুলা</h3>
+        <h3 class="text-lg font-bold text-gray-900 mb-2">100% Organic Formula</h3>
         <p class="text-gray-600 text-sm">
-          প্রোডাক্টটি ১০০% প্রাকৃতিক উপাদান দিয়ে তৈরি, কোন রাসায়নিক উপাদান নেই।
+          Crafted with only the purest natural ingredients. Zero artificial additives, zero compromises.
         </p>
       </div>
 
       <!-- Card 3 -->
       <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300">
-        <img src="https://via.placeholder.com/120x120.png?text=Quality"
+        <img src="https://readdy.ai/api/search-image?query=premium%20quality%20badge%2C%20gold%20and%20green%2C%20minimalist%20icon&width=120&height=120&seq=icon3"
              alt="Premium Quality"
              class="mx-auto mb-4 w-24 h-24 object-contain"
              loading="lazy" decoding="async">
-        <h3 class="text-lg font-bold text-gray-900 mb-2">প্রিমিয়াম কোয়ালিটি</h3>
+        <h3 class="text-lg font-bold text-gray-900 mb-2">Premium Quality</h3>
         <p class="text-gray-600 text-sm">
-          সর্বাধুনিক প্রযুক্তি দিয়ে তৈরি হওয়ায় এটি বাজারের সেরা মান বজায় রাখে।
+          We use state-of-the-art technology to maintain the potency and purity of our ingredients.
         </p>
       </div>
 
       <!-- Card 4 -->
       <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300">
-        <img src="https://via.placeholder.com/120x120.png?text=Trust"
+        <img src="https://readdy.ai/api/search-image?query=globe%20icon%20with%20people%2C%20green%20and%20blue%2C%20minimalist&width=120&height=120&seq=icon4"
              alt="Trusted Worldwide"
              class="mx-auto mb-4 w-24 h-24 object-contain"
              loading="lazy" decoding="async">
-        <h3 class="text-lg font-bold text-gray-900 mb-2">বিশ্বজুড়ে ভরসা</h3>
+        <h3 class="text-lg font-bold text-gray-900 mb-2">Trusted Worldwide</h3>
         <p class="text-gray-600 text-sm">
-          ১,০০০+ গ্রাহক ইতিমধ্যেই আমাদের প্রোডাক্ট ব্যবহার করে সন্তুষ্ট।
+          Join over 100,000 satisfied customers who have made NatureSlim a part of their health journey.
         </p>
       </div>
 
@@ -304,7 +263,7 @@
 </div>
 </div>
 </section>
-<section class="py-20 bg-gray-50">
+<section class="py-20 bg-light-bg">
     <div class="container mx-auto px-6">
         <div class="text-center mb-16">
             <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Order Today and Get 2 FREE Bonuses!</h2>
@@ -365,75 +324,50 @@
         </div>
     </div>
 </section>
-<section class="py-16 bg-gray-50">
-  <!-- Section Heading -->
-  <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
-    Our কাস্টমার রিভিউ
-  </h2>
-
-  <!-- Review Cards Grid -->
-  <div class="grid gap-8 md:grid-cols-3 max-w-6xl mx-auto px-6">
-
-    <!-- Single Review Card -->
-    <div class="bg-white rounded-2xl shadow-lg p-6 text-center transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-      <!-- Profile Image -->
-      <img class="w-20 h-20 mx-auto rounded-full border-4 border-gray-200 object-cover"
-           src="https://randomuser.me/api/portraits/women/44.jpg" alt="Customer" />
-
-      <!-- Verified Label -->
-      <div class="mt-4 flex items-center justify-center gap-2">
-        <span class="font-semibold text-green-600">ভেরিফাইড পারচেস</span>
-        <span class="text-green-600 bg-green-100 px-2 py-0.5 rounded-full text-xs">✔</span>
-      </div>
-
-      <!-- Stars -->
-      <div class="flex justify-center mt-3 text-yellow-400">
-        ★★★★★
-      </div>
-
-      <!-- Review Text -->
-      <p class="mt-4 text-gray-600">
-        এই প্রোডাক্টটি সত্যিই অসাধারণ! ব্যবহার করার পর থেকে আমার অভিজ্ঞতা অনেক ভালো হয়েছে।
-      </p>
-
-      <!-- Name & Location -->
-      <h4 class="mt-4 font-bold text-gray-800">সাবিনা আক্তার, ঢাকা</h4>
+<section class="py-16 bg-light-bg">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900">What Our Customers Say</h2>
+      <p class="text-lg text-gray-600 mt-2">Real stories from real people who have transformed their lives.</p>
     </div>
-
-    <!-- Card 2 -->
-    <div class="bg-white rounded-2xl shadow-lg p-6 text-center transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-      <img class="w-20 h-20 mx-auto rounded-full border-4 border-gray-200 object-cover"
-           src="https://randomuser.me/api/portraits/men/46.jpg" alt="Customer" />
-      <div class="mt-4 flex items-center justify-center gap-2">
-        <span class="font-semibold text-green-600">ভেরিফাইড পারচেস</span>
-        <span class="text-green-600 bg-green-100 px-2 py-0.5 rounded-full text-xs">✔</span>
+    <div class="grid gap-8 md:grid-cols-3">
+      <div class="bg-white rounded-2xl shadow-lg p-6 text-center transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+        <img class="w-20 h-20 mx-auto rounded-full border-4 border-gray-200 object-cover" src="https://randomuser.me/api/portraits/women/44.jpg" alt="Customer Sarah L.">
+        <div class="mt-4 flex items-center justify-center gap-2">
+          <span class="font-semibold text-primary">Verified Purchase</span>
+          <i class="ri-checkbox-circle-fill text-primary"></i>
+        </div>
+        <div class="flex justify-center mt-3 text-yellow-400">
+          <i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i>
+        </div>
+        <p class="mt-4 text-gray-700 italic">"I was skeptical at first, but NatureSlim is a game-changer. I've lost 15 pounds in two months and have never felt more energetic!"</p>
+        <h4 class="mt-4 font-bold text-gray-800">Sarah L., Austin, TX</h4>
       </div>
-      <div class="flex justify-center mt-3 text-yellow-400">
-        ★★★★★
+      <div class="bg-white rounded-2xl shadow-lg p-6 text-center transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+        <img class="w-20 h-20 mx-auto rounded-full border-4 border-gray-200 object-cover" src="https://randomuser.me/api/portraits/men/46.jpg" alt="Customer Mark R.">
+        <div class="mt-4 flex items-center justify-center gap-2">
+          <span class="font-semibold text-primary">Verified Purchase</span>
+          <i class="ri-checkbox-circle-fill text-primary"></i>
+        </div>
+        <div class="flex justify-center mt-3 text-yellow-400">
+          <i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i>
+        </div>
+        <p class="mt-4 text-gray-700 italic">"This is the only supplement that has worked for me. The natural ingredients make all the difference. Highly recommended!"</p>
+        <h4 class="mt-4 font-bold text-gray-800">Mark R., Toronto, ON</h4>
       </div>
-      <p class="mt-4 text-gray-600">
-        দামের তুলনায় অনেক ভালো মানের প্রোডাক্ট। আমি ১০০% সন্তুষ্ট।
-      </p>
-      <h4 class="mt-4 font-bold text-gray-800">রাহুল সেন, চট্টগ্রাম</h4>
+      <div class="bg-white rounded-2xl shadow-lg p-6 text-center transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+        <img class="w-20 h-20 mx-auto rounded-full border-4 border-gray-200 object-cover" src="https://randomuser.me/api/portraits/women/68.jpg" alt="Customer Emily P.">
+        <div class="mt-4 flex items-center justify-center gap-2">
+          <span class="font-semibold text-primary">Verified Purchase</span>
+          <i class="ri-checkbox-circle-fill text-primary"></i>
+        </div>
+        <div class="flex justify-center mt-3 text-yellow-400">
+          <i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-half-s-fill"></i>
+        </div>
+        <p class="mt-4 text-gray-700 italic">"I love that there are no side effects. I feel healthier, my cravings are gone, and the weight is steadily coming off. Thank you!"</p>
+        <h4 class="mt-4 font-bold text-gray-800">Emily P., Sydney, NSW</h4>
+      </div>
     </div>
-
-    <!-- Card 3 -->
-    <div class="bg-white rounded-2xl shadow-lg p-6 text-center transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-      <img class="w-20 h-20 mx-auto rounded-full border-4 border-gray-200 object-cover"
-           src="https://randomuser.me/api/portraits/women/68.jpg" alt="Customer" />
-      <div class="mt-4 flex items-center justify-center gap-2">
-        <span class="font-semibold text-green-600">ভেরিফাইড পারচেস</span>
-        <span class="text-green-600 bg-green-100 px-2 py-0.5 rounded-full text-xs">✔</span>
-      </div>
-      <div class="flex justify-center mt-3 text-yellow-400">
-        ★★★★★
-      </div>
-      <p class="mt-4 text-gray-600">
-        আমার পরিবারের সবাই ব্যবহার করছে। এক কথায় দুর্দান্ত প্রোডাক্ট!
-      </p>
-      <h4 class="mt-4 font-bold text-gray-800">নুসরাত জাহান, সিলেট</h4>
-    </div>
-
   </div>
 </section>
   <section id="science" class="py-20 bg-white">
@@ -706,26 +640,26 @@
 
   <!-- Heading -->
   <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-    আপনার স্বাস্থ্যের নতুন যাত্রা শুরু করুন আজই!
+    Ready to Start Your Transformation?
   </h2>
 
   <!-- Product Image -->
   <div class="flex justify-center mb-6">
     <img
-      src="https://via.placeholder.com/400x400.png"
+      src="https://readdy.ai/api/search-image?query=elegant%20supplement%20bottle%20with%20natural%20ingredients%20on%20a%20clean%20background&width=400&height=400&seq=cta_product&orientation=squarish"
       alt="Product Image"
-      class="w-72 h-72 object-contain"
+      class="w-72 h-72 object-contain rounded-lg"
     />
   </div>
 
   <!-- Sub-heading -->
   <h3 class="text-xl font-medium text-gray-800 mb-2">
-    বৈজ্ঞানিকভাবে প্রমাণিত ফলাফল
+    Experience Scientifically-Proven Results
   </h3>
 
   <!-- Sub-sub-heading -->
   <p class="text-sm text-gray-600 mb-6">
-    হাজারো মানুষের জীবনে পরিবর্তন এনেছে এই ফর্মুলা
+    Join thousands who have changed their lives with this formula.
   </p>
 
   <!-- CTA Button -->
@@ -736,7 +670,7 @@
            transform transition duration-300
            hover:scale-105 hover:from-emerald-600 hover:to-green-500"
   >
-    এখনই অর্ডার করুন
+    Order Now & Claim Your Bonuses
   </a>
 
 </section>

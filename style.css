@@ -16,6 +16,7 @@
 #mobileMenu.active {
   opacity: 1;
   pointer-events: auto;
+  z-index: 60;
 }
 .custom-checkbox {
   appearance: none;
