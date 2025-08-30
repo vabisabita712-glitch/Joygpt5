@@ -1,0 +1,85 @@
+.toast {
+  transition: transform .5s ease, opacity .5s ease;
+}
+.promotion-banner {
+  animation: slideIn 0.5s ease-out;
+}
+@keyframes slideIn {
+  from { transform: translateY(-100%); }
+  to { transform: translateY(0); }
+}
+#mobileMenu {
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+  pointer-events: none;
+}
+#mobileMenu.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.hero-section {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.95) 45%, rgba(255, 255, 255, 0.8) 65%, rgba(255, 255, 255, 0) 100%), url('https://readdy.ai/api/search-image?query=A%20serene%20and%20modern%20wellness%20scene%20with%20a%20minimalist%20aesthetic.%20Natural%20light%20streaming%20through%20large%20windows%20illuminates%20a%20clean%2C%20bright%20space.%20Featuring%20subtle%20elements%20of%20health%20and%20wellness%20-%20fresh%20green%20plants%2C%20clean%20water%2C%20and%20natural%20textures.%20The%20composition%20should%20be%20airy%20and%20spacious%20with%20a%20soft%2C%20muted%20color%20palette%20dominated%20by%20whites%20and%20gentle%20earth%20tones.&width=1920&height=1080&seq=1&orientation=landscape');
+  background-size: cover;
+  background-position: right center;
+}
+.custom-checkbox {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #10B981;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+}
+.custom-checkbox:checked {
+  background-color: #10B981;
+}
+.custom-checkbox:checked::after {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.custom-switch {
+  position: relative;
+  width: 44px;
+  height: 24px;
+}
+.switch-input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.switch-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+.switch-slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+.switch-input:checked + .switch-slider {
+  background-color: #10B981;
+}
+.switch-input:checked + .switch-slider:before {
+  transform: translateX(20px);
+}
