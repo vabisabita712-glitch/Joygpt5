@@ -67,24 +67,28 @@ document.addEventListener('DOMContentLoaded', function() {
             question.addEventListener('click', () => {
                 const answer = question.nextElementSibling;
                 const icon = question.querySelector('i');
+                const isOpen = answer.style.maxHeight && answer.style.maxHeight !== '0px';
 
-                // Close other open answers
+                // Close all other answers
                 questions.forEach(otherQuestion => {
                     if (otherQuestion !== question) {
                         otherQuestion.nextElementSibling.style.maxHeight = '0px';
-                        otherQuestion.querySelector('i').classList.remove('ri-subtract-line');
-                        otherQuestion.querySelector('i').classList.add('ri-add-line');
+                        const otherIcon = otherQuestion.querySelector('i');
+                        otherIcon.classList.add('ri-add-line');
+                        otherIcon.classList.remove('ri-subtract-line');
                     }
                 });
 
-                // Toggle current answer
-                if (answer.style.maxHeight && answer.style.maxHeight !== '0px') {
+                // Toggle the clicked answer
+                if (isOpen) {
                     answer.style.maxHeight = '0px';
+                    icon.classList.add('ri-add-line');
+                    icon.classList.remove('ri-subtract-line');
                 } else {
                     answer.style.maxHeight = answer.scrollHeight + 'px';
+                    icon.classList.remove('ri-add-line');
+                    icon.classList.add('ri-subtract-line');
                 }
-                icon.classList.toggle('ri-add-line');
-                icon.classList.toggle('ri-subtract-line');
             });
         });
     }

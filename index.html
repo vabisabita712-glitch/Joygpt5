@@ -9,7 +9,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
 <link rel="stylesheet" href="style.css">
 <script>
@@ -71,7 +70,7 @@
             </div>
         </div>
 
-        <div id="mobileMenu" class="fixed inset-0 bg-white z-40 transition-all duration-300 ease-in-out">
+        <div id="mobileMenu" class="fixed inset-0 bg-white z-40">
             <div class="flex flex-col items-center justify-center min-h-screen space-y-6">
                 <a href="#" class="text-gray-700 hover:text-primary text-xl">Home</a>
                 <a href="#" class="text-gray-700 hover:text-primary text-xl">Products</a>
@@ -328,77 +327,43 @@
     </div>
 </section>
 <section class="py-20">
-<div class="container mx-auto px-6">
-<h2 class="text-3xl font-bold text-center mb-12">Choose Your Plan</h2>
-<div class="grid md:grid-cols-3 gap-8">
-<div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100">
-<h3 class="text-xl font-semibold mb-4">Starter Pack</h3>
-<div class="text-4xl font-bold mb-6">$39.99<span class="text-lg text-gray-500">/month</span></div>
-<ul class="space-y-4 mb-8">
-<li class="flex items-center gap-3">
-<i class="ri-check-line text-primary"></i>
-<span>1 Month Supply</span>
-</li>
-<li class="flex items-center gap-3">
-<i class="ri-check-line text-primary"></i>
-<span>Free Shipping</span>
-</li>
-<li class="flex items-center gap-3">
-<i class="ri-check-line text-primary"></i>
-<span>Basic Support</span>
-</li>
-</ul>
-<button class="w-full bg-white border-2 border-primary text-primary px-6 py-3 !rounded-button hover:bg-primary hover:text-white font-medium">Choose Plan</button>
-</div>
-<div class="bg-white p-8 rounded-lg shadow-lg border-2 border-primary relative">
-<div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary text-white px-4 py-1 rounded-full text-sm">Most Popular</div>
-<h3 class="text-xl font-semibold mb-4">Value Pack</h3>
-<div class="text-4xl font-bold mb-6">$29.99<span class="text-lg text-gray-500">/month</span></div>
-<ul class="space-y-4 mb-8">
-<li class="flex items-center gap-3">
-<i class="ri-check-line text-primary"></i>
-<span>3 Month Supply</span>
-</li>
-<li class="flex items-center gap-3">
-<i class="ri-check-line text-primary"></i>
-<span>Free Shipping</span>
-</li>
-<li class="flex items-center gap-3">
-<i class="ri-check-line text-primary"></i>
-<span>Priority Support</span>
-</li>
-<li class="flex items-center gap-3">
-<i class="ri-check-line text-primary"></i>
-<span>Diet Plan Included</span>
-</li>
-</ul>
-<button class="w-full bg-primary text-white px-6 py-3 !rounded-button hover:bg-opacity-90 font-medium">Choose Plan</button>
-</div>
-<div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100">
-<h3 class="text-xl font-semibold mb-4">Premium Pack</h3>
-<div class="text-4xl font-bold mb-6">$24.99<span class="text-lg text-gray-500">/month</span></div>
-<ul class="space-y-4 mb-8">
-<li class="flex items-center gap-3">
-<i class="ri-check-line text-primary"></i>
-<span>6 Month Supply</span>
-</li>
-<li class="flex items-center gap-3">
-<i class="ri-check-line text-primary"></i>
-<span>Free Shipping</span>
-</li>
-<li class="flex items-center gap-3">
-<i class="ri-check-line text-primary"></i>
-<span>24/7 VIP Support</span>
-</li>
-<li class="flex items-center gap-3">
-<i class="ri-check-line text-primary"></i>
-<span>Diet Plan & Coaching</span>
-</li>
-</ul>
-<button class="w-full bg-white border-2 border-primary text-primary px-6 py-3 !rounded-button hover:bg-primary hover:text-white font-medium">Choose Plan</button>
-</div>
-</div>
-</div>
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Choose Your Plan</h2>
+            <p class="text-lg text-gray-600">Select the package that best suits your needs.</p>
+        </div>
+        <div class="flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/3">
+                <img src="https://readdy.ai/api/search-image?query=professional%20product%20shot%20of%20a%20modern%20supplement%20bottle%2C%20minimalist%20design%2C%20white%20background&width=600&height=800&seq=pricing_image&orientation=portrait" alt="NatureSlim Product" class="rounded-lg shadow-xl w-full h-auto object-cover">
+            </div>
+            <div class="md:w-2/3">
+                <div class="space-y-6">
+                    <!-- Pricing Card 1 -->
+                    <div class="bg-white p-6 rounded-lg border border-gray-200 hover:border-primary transition">
+                        <h3 class="text-xl font-semibold mb-2">Starter Pack - 1 Month Supply</h3>
+                        <p class="text-gray-600 mb-4">A great way to begin your journey.</p>
+                        <div class="text-4xl font-bold">$39.99<span class="text-lg text-gray-500">/month</span></div>
+                        <button class="w-full mt-4 bg-primary text-white px-6 py-3 !rounded-button hover:bg-opacity-90 font-medium">Choose Plan</button>
+                    </div>
+                    <!-- Pricing Card 2 -->
+                    <div class="bg-white p-6 rounded-lg border-2 border-primary relative">
+                        <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary text-white px-4 py-1 rounded-full text-sm">Most Popular</div>
+                        <h3 class="text-xl font-semibold mb-2">Value Pack - 3 Month Supply</h3>
+                        <p class="text-gray-600 mb-4">Best value and our most recommended plan.</p>
+                        <div class="text-4xl font-bold">$29.99<span class="text-lg text-gray-500">/month</span></div>
+                        <button class="w-full mt-4 bg-primary text-white px-6 py-3 !rounded-button hover:bg-opacity-90 font-medium">Choose Plan</button>
+                    </div>
+                    <!-- Pricing Card 3 -->
+                    <div class="bg-white p-6 rounded-lg border border-gray-200 hover:border-primary transition">
+                        <h3 class="text-xl font-semibold mb-2">Premium Pack - 6 Month Supply</h3>
+                        <p class="text-gray-600 mb-4">For long-term results and maximum savings.</p>
+                        <div class="text-4xl font-bold">$24.99<span class="text-lg text-gray-500">/month</span></div>
+                        <button class="w-full mt-4 bg-primary text-white px-6 py-3 !rounded-button hover:bg-opacity-90 font-medium">Choose Plan</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 <section class="py-16 bg-gray-50">
   <!-- Section Heading -->
