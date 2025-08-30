@@ -9,18 +9,15 @@
   to { transform: translateY(0); }
 }
 #mobileMenu {
+  display: none;
   transition: opacity 0.3s ease-in-out;
   opacity: 0;
   pointer-events: none;
 }
 #mobileMenu.active {
+  display: flex;
   opacity: 1;
   pointer-events: auto;
-}
-.hero-section {
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.95) 45%, rgba(255, 255, 255, 0.8) 65%, rgba(255, 255, 255, 0) 100%), url('https://readdy.ai/api/search-image?query=A%20serene%20and%20modern%20wellness%20scene%20with%20a%20minimalist%20aesthetic.%20Natural%20light%20streaming%20through%20large%20windows%20illuminates%20a%20clean%2C%20bright%20space.%20Featuring%20subtle%20elements%20of%20health%20and%20wellness%20-%20fresh%20green%20plants%2C%20clean%20water%2C%20and%20natural%20textures.%20The%20composition%20should%20be%20airy%20and%20spacious%20with%20a%20soft%2C%20muted%20color%20palette%20dominated%20by%20whites%20and%20gentle%20earth%20tones.&width=1920&height=1080&seq=1&orientation=landscape');
-  background-size: cover;
-  background-position: right center;
 }
 .custom-checkbox {
   appearance: none;
